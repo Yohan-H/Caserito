@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "109769774060",
+    "project_id": "caserito-59643",
+    "storage_bucket": "caserito-59643.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109769774060:android:f9b433416434c02b7ba6c9",
+        "android_client_info": {
+          "package_name": "com.example.caserito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109769774060-2bn83k4ocsrj9cmksp0os40gnsk60j0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj12noioA-Z2V2jIBtSEUuUPpzH7bZWec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109769774060-2bn83k4ocsrj9cmksp0os40gnsk60j0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Caserito</string>
+    <string name="registrar">registrarse</string>
+    <string name="BtnRegistrar">Registrar</string>
+    <string name="ingresar">ingresar</string>
+    <string name="TextViewRegistro">INGRESE SUS DATOS</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtCelular">Celular</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtContrasena">Contrasena</string>
+    <string name="txtConfiContrasena">Confirmar Contrasena</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txtTiendas">Tiendas</string>
+
+
+</resources>
