@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +22,9 @@
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="120dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            tools:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,22 +61,23 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/carnes" />
 
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#15368A"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/golocinas" />
+
             </LinearLayout>
         </ScrollView>
 
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="421dp"
-            android:layout_height="wrap_content"
-            android:background="#15368A"
-            app:srcCompat="@drawable/golocinas" />
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
