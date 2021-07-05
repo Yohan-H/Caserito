@@ -77,7 +77,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onLocationChanged(Location location) {
                 LatLng miUbicacion = new LatLng(location.getLatitude(), location.getLongitude());
-                mMap.addMarker(new MarkerOptions().position(miUbicacion).title("ubicacion actual"));
+                mMap.addMarker(new MarkerOptions().position(miUbicacion).title("Ubicacion actual"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(miUbicacion));
                 CameraPosition cameraPosition = new CameraPosition.Builder()
                         .target(miUbicacion)
@@ -139,5 +139,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(T3).title("Bodega Cayma Caserito").icon(BitmapDescriptorFactory.fromResource(R.mipmap.icon_marca_mapa_foreground)).anchor(0.0f,1.0f));
         final LatLng T4 = new LatLng(-16.4041542,-71.51872);
         mMap.addMarker(new MarkerOptions().position(T4).title("Bodega La Negrita Caserito").icon(BitmapDescriptorFactory.fromResource(R.mipmap.icon_marca_mapa_foreground)).anchor(0.0f,1.0f));
+
+        final LatLng T5 = new LatLng(-16.6218848,-72.7104159);
+        mMap.addMarker(new MarkerOptions().position(T5).title("Bodega Camaná").icon(BitmapDescriptorFactory.fromResource(R.mipmap.icon_marca_mapa_foreground)).anchor(0.0f,1.0f));
+
+
     }
 }

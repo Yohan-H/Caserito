@@ -3,11 +3,13 @@ package com.example.caserito;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText correo;
     private EditText contrasena;
     //private EditText confiContrasena;
+    VideoView videoView;
 
 
 
@@ -34,9 +37,19 @@ public class MainActivity extends AppCompatActivity {
         contrasena = findViewById(R.id.editTextTextPassword);
         //confiContrasena = findViewById(R.id.editTextTextPassword3);
 
+       //inicializando el video
+
+        videoView = (VideoView) findViewById(R.id.videoView);
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName()+ "/" + R.raw.caserito_vide ));
+        videoView.start();
+
+
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+
+
     }
+
 
     //cambios de interfaz
     public void registrar(View view){
