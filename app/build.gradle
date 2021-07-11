@@ -40,6 +40,14 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Aplicando ML
+    // Use this dependency to bundle the model with your app
+    implementation 'com.google.mlkit:image-labeling:17.0.5'
+
+    // Use this dependency to use dynamically downloaded model in Google Play Service
+    implementation 'com.google.android.gms:play-services-mlkit-image-labeling:16.0.5'
+
     //firebase para usar número de celular como autentificación
     implementation 'com.google.firebase:firebase-auth:21.0.1'
 
